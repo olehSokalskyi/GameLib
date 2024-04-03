@@ -20,6 +20,6 @@ namespace GameLib.Core.Entities
         public virtual Role Role { get; set; }
         public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
         public virtual ICollection<Game> Games { get; set; } = new List<Game>();
-
+        public virtual ICollection<GameTime> GameTimes { get; set; } = new List<GameTime>();
     }
 }

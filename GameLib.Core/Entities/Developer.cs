@@ -10,7 +10,7 @@ namespace GameLib.Core.Entities
     public class Developer
     {
         [Key]
-        public Guid Guid { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public virtual ICollection<Game> Games { get; set; } = new List<Game>();

@@ -29,6 +29,7 @@ namespace GameLib.Core
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Platform> Platforms { get; set; }
+        public DbSet<GameTime> GameTimes { get; set; }
 
 
 
