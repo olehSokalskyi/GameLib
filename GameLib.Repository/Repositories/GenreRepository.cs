@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace GameLib.Repository.Repositories
 {
-    internal class GenreRepository: IRepository<Genre>
+    public class GenreRepository: IRepository<Genre>
     {
         private readonly AppDbContext _context;
         public GenreRepository(AppDbContext context)
