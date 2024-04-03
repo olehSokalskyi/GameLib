@@ -23,6 +23,7 @@ namespace GameLib.Core.Entities
         public virtual ICollection<Developer> Developers { get; set; } = new List<Developer>(); 
         public virtual ICollection<Language> Languages { get; set; } = new List<Language>();
         public virtual ICollection<Platform> Platforms { get; set; } = new List<Platform>();
+        public virtual ICollection<User> Players { get; set; } = new List<User>();
 
         public virtual Publisher Publisher { get; set; }
         public virtual Discount? Discount { get; set; }

@@ -16,6 +16,7 @@ namespace GameLib.Core
             modelBuilder.Entity<Game>().HasMany(g => g.Developers).WithMany(g => g.Games);
             modelBuilder.Entity<Game>().HasMany(g => g.Languages).WithMany(g => g.Games);
             modelBuilder.Entity<Game>().HasMany(g => g.Platforms).WithMany(g => g.Games);
+            modelBuilder.Entity<Game>().HasMany(g => g.Players).WithMany(g => g.Games);
         }
         public DbSet<Game> Games { get; set; }
         public DbSet<Developer> Developers { get; set; }
