@@ -10,7 +10,7 @@ namespace GameLib.Core.Entities
     public class Role
     {
         [Key]
-        public Guid Guid { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Title { get; set; } = string.Empty;
         public virtual ICollection<User> Users { get; set; } = new List<User>();    
     }
